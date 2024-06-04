@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover-slider-indicator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script type="module" src="js/templates.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/web-projects-lab/hover-slider@1.0.3/hover-slider.min.js" defer></script>
+    <script type="module" src="js/swiper.js" defer></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/mask/mask.js"></script>
+    <script src="js/mask.js"></script>
+    <title>FoodFace</title>
+</head>
+<body>
+    <my-icons class="icons"></my-icons>
+    <my-header-mobile class="header-mobile" id="header-mobile"></my-header-mobile>
+    <div class="container container_sideless wrapper">
+        <my-header class="header"></my-header>
+        <div class="bread-crumbs">
+            <a href="index.html" class="bread-crumbs__item">Главная</a>
+            <a href="product-catalog.html" class="bread-crumbs__item">Каталог</a>
+            <a href="catalog.html" class="bread-crumbs__item">Название категории</a>
+            <a href="product-one.html" class="bread-crumbs__item">Коробка для бургеров с печатью</a>
+        </div>
+        <main class="product-one">
+            <div class="heading-container">
+                <div class="heading heading-secondary">Коробка для бургеров с печатью</div>
+            </div>
+            <nav class="page-nav">
+                <a href="#" class="active">Товар</a>
+                <a href="#product-kit">Комплект  к товару</a>
+                <a href="#analogues">Аналоги</a>
+                <a href="#with-product">С этим товаров берут</a>
+            </nav>
+            <div class="product-one__content">
+                <div class="product-one__imgs">
+                    <div class="detail-d detail-d_rating product-one__rating">
+                        <div class="product-one__rating-title">Рейтинг:</div>
+                        <form class="rating-d rating-d_fa js_rating_form ajax" action="" method="POST">
+                            <input type="hidden" name="module" value="rating">
+                            <input type="hidden" name="action" value="add">
+                            <input type="hidden" name="module_name" value="shop">
+                            <input type="hidden" name="element_type" value="element">
+                            <input type="hidden" name="element_id" value="74">
+                            <fieldset>
+                                <legend>Рейтинг</legend>
+                                <input type="radio" name="rating" value="1" id="shop_element_74_0">
+                                <label for="shop_element_74_0" class="star">
+                                    <svg class="icon"><use href="#icon-star"></use></svg>
+                                </label>
+                                <input type="radio" name="rating" value="2" id="shop_element_74_1">
+                                <label for="shop_element_74_1" class="star">
+                                    <svg class="icon"><use href="#icon-star"></use></svg>
+                                </label>
+                                <input type="radio" name="rating" value="3" id="shop_element_74_2">
+                                <label for="shop_element_74_2" class="star">
+                                    <svg class="icon"><use href="#icon-star"></use></svg>
+                                </label>
+                                <input type="radio" name="rating" value="4" id="shop_element_74_3">
+                                <label for="shop_element_74_3" class="star">
+                                    <svg class="icon"><use href="#icon-star"></use></svg>
+                                </label>
+                                <input type="radio" name="rating" value="5" id="shop_element_74_4">
+                                <label for="shop_element_74_4" class="star">
+                                    <svg class="icon"><use href="#icon-star"></use></svg>
+                                </label>
+                            </fieldset>
+                            <div class="errors error" style="display:none"></div>
+                        </form>
+                    </div>
+                    <div class="popular-items">
+                        <div class="slider swiper product-one__main-img" id="product-swiper">
+                                <div class="swiper-wrapper slider-content">
+                                    <div class="swiper-slide"><img src="img/products/burger_hight-rez.png"></div>
+                                    <div class="swiper-slide"><img src="img/products/cup_1.png"></div>
+                                    <div class="swiper-slide"><img src="img/products/burger_hight-rez.png"></div>
+                                    <div class="swiper-slide"><img src="img/products/cup_1.png"></div>
+                                </div>
+                            <div class="popular-items__slider-btns">
+                                <button class="slider__prev swiper-button-prev">
+                                    <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                                </button>
+                                <button class="slider__next swiper-button-next">
+                                    <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                                </button>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper" id="product-swiper-2" thumbsSlider="">
+                            <div class="product-one__other-imgs swiper-wrapper" id="product-swiper-pagination">
+                                <div class="swiper-slide"><img src="img/products/burger_hight-rez.png"></div>
+                                <div class="swiper-slide"><img src="img/products/cup_1.png"></div>
+                                <div class="swiper-slide"><img src="img/products/burger_hight-rez.png"></div>
+                                <div class="swiper-slide"><img src="img/products/cup_1.png"></div>
+                            </div>
+                        </div>
+                        <div class="product-one__matching items-parent">
+                            <button class="matching">
+                                <svg class="icon">
+                                    <use href="#icon-matching"></use>
+                                </svg>
+                            </button>
+                            <button class="favorites">
+                                <svg class="icon">
+                                    <use href="#icon-heart"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-one__description">
+                        <div class="product-one__tools">
+                            <div class="product-one__rating">
+                                <span>Рейтинг:</span>
+                                <svg class="icon"><use href="#icon-star"></use></svg>
+                                <svg class="icon"><use href="#icon-star"></use></svg>
+                                <svg class="icon"><use href="#icon-star"></use></svg>
+                                <svg class="icon"><use href="#icon-star"></use></svg>
+                                <svg class="icon"><use href="#icon-star"></use></svg>
+                            </div>
+                            <div class="product-one__matching">
+                                <button class="mathicng">
+                                    <svg class="icon">
+                                        <use href="#icon-matching"></use>
+                                    </svg>
+                                </button>
+                                <button class="favorites">
+                                    <svg class="icon">
+                                        <use href="#icon-heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-one__text">
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. 
+    
+                            Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира.
+                        </div>
+                        <button class="show-more">Все характеристики</button>
+                        <div class="product-one__price">
+                            <span>20.60 р/шт</span>
+                            <div class="product-one__price-modal">
+                                <img class="product-one__info-icon" src="img/icon/info.svg">
+                                <div class="product-one__modal">
+                                    <div>до 2999 - 20.60 руб.</div>
+                                    <div>от 3000 - 18.20 руб.</div>
+                                    <div>от 3500 - 18.10 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-one__btns items-parent">
+                            <button class="btn">В корзину</button>
+                            <button class="secondary-btn quick-buy_black popular-items__quick-buy">Купить в 1 клик</button>
+                        <div class="quick-buy-modal modal">
+                            <button class="modal__close close-quick-buy-modal"><img src="img/icon/close.svg"></button>
+                            <div class="quick-buy-modal__item">
+                                <div class="info">
+                                    <img src="img/products/cup_1.png">
+                                    <div class="name">Однослойный бумажный стакан 100 мл</div>
+                                </div>
+                                <div class="amount">
+                                    <div class="label">Количество</div>
+                                    <div class="amount__control">
+                                        <button><svg class="icon"><use href="#icon-minus"></use></svg></button>
+                                        <div class="count">1000</div>
+                                        <button><svg class="icon"><use href="#icon-plus"></use></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quick-buy-modal__form">
+                                <form action="#" class="form">
+                                    <label for="name">ФИО*</label>
+                                    <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович">
+                                    <label for="number">Ваш телефон*</label>
+                                    <input type="text" id="number" name="phone" placeholder="+7">
+                                    <label for="email">E-mail*</label>
+                                    <input type="text" id="email" name="email" placeholder="ivan@mail.ru">
+                                    <button type="submit" class="btn">Купить в 1 клик</button>
+                                    <div class="agreement">
+                                        <input type="checkbox" id="agree">
+                                        <span class="checkmark"></span>
+                                        <label for="agree">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product-one__about">
+                            <div class="product-one__delivery">
+                                <div>Доставка <a href="#">г. Екатеринбург</a></div>
+                                <span>По согласованию с менеджером</span>
+                            </div>
+                            <a href="#" class="product-one__payment">Способы оплаты</a>
+                            <a href="#" class="product-one__about-delivery">О доставке</a>
+                        </div>
+                    </div>
+                    <div class="product-one__info">
+                        <div class="product-one__btns">
+                            <button class="secondary-btn product-feature product-one__characteristics" id="product-characteristics">Характеристики</button>
+                            <button class="secondary-btn product-feature product-one__specification active" id="product-specification">Описание</button>
+                            <button class="secondary-btn product-feature product-one__reviews" id="product-reviews">Отзывы</button>
+                        </div>
+                        <div class="product-one__feature product-feature product-one__characteristics feature" id="product-characteristics">
+                            <div class="features">
+                                <div class="feature">
+                                    <div>Цвет</div>
+                                    <div>Зеленый</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Форма</div>
+                                    <div>Квадратная</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Ширина, мм</div>
+                                    <div>115</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Глубина, мм</div>
+                                    <div>100</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Высота, мм</div>
+                                    <div>60</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Материал</div>
+                                    <div>Бумага</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Ламинация</div>
+                                    <div>Да</div>
+                                </div>
+                                <div class="feature">
+                                    <div>Жиростойкость</div>
+                                    <div>Да</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-one__feature product-feature product-one__specification active feature">
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. <br/><br/>
+
+                            Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира. 
+                            Еда на вынос становится такой же популярной, как и кофе. <br/><br/>
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира. 
+                            Еда на вынос становится такой же популярной, как и кофе. 
+                        </div>
+                        <div class="product-one__feature product-feature product-one__reviews feature">
+                            <div class="reviews popular-items">
+                                <div class="swiper" id="review-swiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="review__text">
+                                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+                
+                                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                                </div>
+                                                <div class="review__author">
+                                                    <img src="img/persons/pers_1.jfif">
+                                                    <div class="review__name">
+                                                        <div>Иван Иванов</div>
+                                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="review__text">
+                                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+                
+                                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                                </div>
+                                                <div class="review__author">
+                                                    <img src="img/persons/pers_1.jfif">
+                                                    <div class="review__name">
+                                                        <div>Иван Иванов</div>
+                                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="review__text">
+                                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+                
+                                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                                </div>
+                                                <div class="review__author">
+                                                    <img src="img/persons/pers_1.jfif">
+                                                    <div class="review__name">
+                                                        <div>Иван Иванов</div>
+                                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="review__text">
+                                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+                
+                                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                                </div>
+                                                <div class="review__author">
+                                                    <img src="img/persons/pers_1.jfif">
+                                                    <div class="review__name">
+                                                        <div>Иван Иванов</div>
+                                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-items__slider-btns">
+                                        <button class="slider__prev swiper-button-prev">
+                                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                                        </button>
+                                        <button class="slider__next swiper-button-next">
+                                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-one__description">
+                    <div class="product-one__tools">
+                        <div class="detail-d detail-d_rating product-one__rating">
+                            <div class="product-one__rating-title">Рейтинг:</div>
+                            <form class="rating-d rating-d_fa js_rating_form ajax" action="" method="POST">
+                                <input type="hidden" name="module" value="rating">
+                                <input type="hidden" name="action" value="add">
+                                <input type="hidden" name="module_name" value="shop">
+                                <input type="hidden" name="element_type" value="element">
+                                <input type="hidden" name="element_id" value="74">
+                                <fieldset>
+                                    <legend>Рейтинг</legend>
+                                    <input type="radio" name="rating" value="1" id="shop_element_74_0">
+                                    <label for="shop_element_74_0" class="star">
+                                        <svg class="icon"><use href="#icon-star"></use></svg>
+                                    </label>
+                                    <input type="radio" name="rating" value="2" id="shop_element_74_1">
+                                    <label for="shop_element_74_1" class="star">
+                                        <svg class="icon"><use href="#icon-star"></use></svg>
+                                    </label>
+                                    <input type="radio" name="rating" value="3" id="shop_element_74_2">
+                                    <label for="shop_element_74_2" class="star">
+                                        <svg class="icon"><use href="#icon-star"></use></svg>
+                                    </label>
+                                    <input type="radio" name="rating" value="4" id="shop_element_74_3">
+                                    <label for="shop_element_74_3" class="star">
+                                        <svg class="icon"><use href="#icon-star"></use></svg>
+                                    </label>
+                                    <input type="radio" name="rating" value="5" id="shop_element_74_4">
+                                    <label for="shop_element_74_4" class="star">
+                                        <svg class="icon"><use href="#icon-star"></use></svg>
+                                    </label>
+                                </fieldset>
+                                <div class="errors error" style="display:none"></div>
+                            </form>
+                        </div>
+                        <div class="product-one__matching items-parent">
+                            <button class="matching">
+                                <svg class="icon">
+                                    <use href="#icon-matching"></use>
+                                </svg>
+                            </button>
+                            <button class="favorites">
+                                <svg class="icon">
+                                    <use href="#icon-heart"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-one__text">
+                        Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. 
+
+                        Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира.
+                    </div>
+                    <button class="show-more">Все характеристики</button>
+                    <div class="product-one__price">
+                        <span>20.60 р/шт</span>
+                        <div class="product-one__price-modal">
+                            <img class="product-one__info-icon" src="img/icon/info.svg">
+                            <div class="product-one__modal">
+                                <div>до 2999 - 20.60 руб.</div>
+                                <div>от 3000 - 18.20 руб.</div>
+                                <div>от 3500 - 18.10 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-one__btns items-parent">
+                        <button class="btn">В корзину</button>
+                        <button class="secondary-btn quick-buy_black popular-items__quick-buy">Купить в 1 клик</button>
+                        <div class="quick-buy-modal modal">
+                            <button class="modal__close close-quick-buy-modal"><img src="img/icon/close.svg"></button>
+                            <div class="quick-buy-modal__item">
+                                <div class="info">
+                                    <img src="img/products/cup_1.png">
+                                    <div class="name">Однослойный бумажный стакан 100 мл</div>
+                                </div>
+                                <div class="amount">
+                                    <div class="label">Количество</div>
+                                    <div class="amount__control">
+                                        <button><svg class="icon"><use href="#icon-minus"></use></svg></button>
+                                        <div class="count">1000</div>
+                                        <button><svg class="icon"><use href="#icon-plus"></use></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quick-buy-modal__form">
+                                <form action="#" class="form">
+                                    <label for="name">ФИО*</label>
+                                    <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович">
+                                    <label for="number">Ваш телефон*</label>
+                                    <input type="text" id="number" name="phone" placeholder="+7">
+                                    <label for="email">E-mail*</label>
+                                    <input type="text" id="email" name="email" placeholder="ivan@mail.ru">
+                                    <button type="submit" class="btn">Купить в 1 клик</button>
+                                    <div class="agreement">
+                                        <input type="checkbox" id="agree">
+                                        <span class="checkmark"></span>
+                                        <label for="agree">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-one__about">
+                        <div class="product-one__delivery">
+                            <div>Доставка <a href="#">г. Екатеринбург</a></div>
+                            <span>По согласованию с менеджером</span>
+                        </div>
+                        <button class="product-one__payment" id="about-payment">Способы оплаты</button>
+                        <button class="product-one__about-delivery" id="about-delivery">О доставке</button>
+                        <div class="product-modal product-modal__payment" id="modal-payment">
+                            <img src="img/icon/close.svg" class="product-modal__close">
+                            <div class="product-modal__title">Способы оплаты</div>
+                            <div class="product-modal__text">Уважаемые покупатели! Для любого населенного пункта России, а также для конкретного покупателя, продуманы индивидуальные способы оплаты. Для того, чтобы увидеть доступность всех способов оплаты, достаточно просто выбрать нужные товары, поместить их в корзину и перейти к оформлению заказа. Вы увидите все доступные способы оплаты для вас и вашего города, выбирайте наиболее удобные из них.</div>
+                            <a href="delivery.html" class="btn product-modal__btn">Подробнее</a>
+                        </div>
+                        <div class="product-modal product-modal__delivery" id="modal-delivery">
+                            <img src="img/icon/close.svg" class="product-modal__close">
+                            <div class="product-modal__title">Способы оплаты</div>
+                            <div class="product-modal__text">Уважаемые покупатели! Для любого населенного пункта России, а также для конкретного покупателя, продуманы индивидуальные способы оплаты. Для того, чтобы увидеть доступность всех способов оплаты, достаточно просто выбрать нужные товары, поместить их в корзину и перейти к оформлению заказа. Вы увидите все доступные способы оплаты для вас и вашего города, выбирайте наиболее удобные из них.</div>
+                            <a href="delivery.html" class="btn product-modal__btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block popular-items items-parent" id="product-kit">
+                <div class="popular-items__label heading-container">
+                    <div class="heading">Комплект к товару</div>
+                </div>
+                <div class="swiper" id="mySwiperFull">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="popular-items__slider-btns">
+                        <button class="slider__prev swiper-button-prev">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                        <button class="slider__next swiper-button-next">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="quick-buy-modal modal">
+                    <button class="modal__close close-quick-buy-modal"><img src="img/icon/close.svg"></button>
+                    <div class="quick-buy-modal__item">
+                        <div class="info">
+                            <img src="img/products/cup_1.png">
+                            <div class="name">Однослойный бумажный стакан 100 мл</div>
+                        </div>
+                        <div class="amount">
+                            <div class="label">Количество</div>
+                            <div class="amount__control">
+                                <button><svg class="icon"><use href="#icon-minus"></use></svg></button>
+                                <div class="count">1000</div>
+                                <button><svg class="icon"><use href="#icon-plus"></use></svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-buy-modal__form">
+                        <form action="#" class="form">
+                            <label for="name">ФИО*</label>
+                            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович">
+                            <label for="number">Ваш телефон*</label>
+                            <input type="text" id="number" name="phone" placeholder="+7">
+                            <label for="email">E-mail*</label>
+                            <input type="text" id="email" name="email" placeholder="ivan@mail.ru">
+                            <button type="submit" class="btn">Купить в 1 клик</button>
+                            <div class="agreement">
+                                <input type="checkbox" id="agree">
+                                <span class="checkmark"></span>
+                                <label for="agree">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block popular-items items-parent" id="analogues">
+                <div class="popular-items__label heading-container">
+                    <div class="heading">Аналоги</div>
+                </div>
+                <div class="swiper" id="mySwiperFull">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="popular-items__slider-btns">
+                        <button class="slider__prev swiper-button-prev">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                        <button class="slider__next swiper-button-next">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="quick-buy-modal modal">
+                    <button class="modal__close close-quick-buy-modal"><img src="img/icon/close.svg"></button>
+                    <div class="quick-buy-modal__item">
+                        <div class="info">
+                            <img src="img/products/cup_1.png">
+                            <div class="name">Однослойный бумажный стакан 100 мл</div>
+                        </div>
+                        <div class="amount">
+                            <div class="label">Количество</div>
+                            <div class="amount__control">
+                                <button><svg class="icon"><use href="#icon-minus"></use></svg></button>
+                                <div class="count">1000</div>
+                                <button><svg class="icon"><use href="#icon-plus"></use></svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-buy-modal__form">
+                        <form action="#" class="form">
+                            <label for="name">ФИО*</label>
+                            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович">
+                            <label for="number">Ваш телефон*</label>
+                            <input type="text" id="number" name="phone" placeholder="+7">
+                            <label for="email">E-mail*</label>
+                            <input type="text" id="email" name="email" placeholder="ivan@mail.ru">
+                            <button type="submit" class="btn">Купить в 1 клик</button>
+                            <div class="agreement">
+                                <input type="checkbox" id="agree">
+                                <span class="checkmark"></span>
+                                <label for="agree">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block popular-items items-parent" id="with-product">
+                <div class="popular-items__label heading-container">
+                    <div class="heading">С этим товаром покупают</div>
+                </div>
+                <div class="swiper" id="mySwiperFull">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg>
+                                        <svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Однослойный<br/> бумажный стакан 100 мл
+                                    </div>
+                                    <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                    <div class="popular-items__status popular-items__in-stock">
+                                        <img src="img/icon/radio_checked.svg">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="popular-items__slider-btns">
+                        <button class="slider__prev swiper-button-prev">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                        <button class="slider__next swiper-button-next">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="quick-buy-modal modal">
+                    <button class="modal__close close-quick-buy-modal"><img src="img/icon/close.svg"></button>
+                    <div class="quick-buy-modal__item">
+                        <div class="info">
+                            <img src="img/products/cup_1.png">
+                            <div class="name">Однослойный бумажный стакан 100 мл</div>
+                        </div>
+                        <div class="amount">
+                            <div class="label">Количество</div>
+                            <div class="amount__control">
+                                <button><svg class="icon"><use href="#icon-minus"></use></svg></button>
+                                <div class="count">1000</div>
+                                <button><svg class="icon"><use href="#icon-plus"></use></svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-buy-modal__form">
+                        <form action="#" class="form">
+                            <label for="name">ФИО*</label>
+                            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович">
+                            <label for="number">Ваш телефон*</label>
+                            <input type="text" id="number" name="phone" placeholder="+7">
+                            <label for="email">E-mail*</label>
+                            <input type="text" id="email" name="email" placeholder="ivan@mail.ru">
+                            <button type="submit" class="btn">Купить в 1 клик</button>
+                            <div class="agreement">
+                                <input type="checkbox" id="agree">
+                                <span class="checkmark"></span>
+                                <label for="agree">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <my-footer class="footer"></my-footer>
+    </div>
+</body>
+</html>

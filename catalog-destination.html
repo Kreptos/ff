@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover-slider-indicator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script type="module" src="js/templates.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/web-projects-lab/hover-slider@1.0.3/hover-slider.min.js" defer></script>
+    <script type="module" src="js/swiper.js" defer></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/mask/mask.js"></script>
+    <script src="js/mask.js"></script>
+    <title>FoodFace</title>
+</head>
+<body>
+    <my-icons class="icons"></my-icons>
+    <my-header-mobile class="header-mobile" id="header-mobile"></my-header-mobile>
+    <div class="container container_sideless wrapper">
+        <my-header class="header"></my-header>
+        <div class="bread-crumbs">
+            <a href="index.html" class="bread-crumbs__item">Главная</a>
+            <a href="product-catalog.html" class="bread-crumbs__item">Каталог</a>
+            <a href="catalog.html" class="bread-crumbs__item">Кофе с собой/кофейня</a>
+        </div>
+        <main class="catalog-destination">
+            <div class="about">
+                <div class="heading-container">
+                    <div class="heading">Кофе с собой/кофейня</div>
+                </div>
+                <div class="about__container">
+                    <div class="about__img">
+                        <img src="img/img/coffee-house.jfif">
+                    </div>
+                    <div class="about__info">
+                        <div class="about__text">
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира. 
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира
+                        </div>
+                        <div class="about__text">
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира. 
+                            Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира
+                        </div>
+                        <div class="about__text">
+                            Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира.
+                        </div>
+                    </div>
+                </div>
+                <div class="about__items">
+                    <div class="about__item">
+                        <img src="img/icon/own_production.svg">
+                        <div class="about__subtitle">Собственное<br/>производство</div>
+                    </div>
+                    <div class="about__item">
+                        <img src="img/icon/print.svg">
+                        <div class="about__subtitle">Печать без<br/>ограничений</div>
+                    </div>
+                    <div class="about__item">
+                        <img src="img/icon/delivery_truck.svg">
+                        <div class="about__subtitle">Работаем по<br/>России и СНГ</div>
+                    </div>
+                    <div class="about__item">
+                        <img src="img/icon/food.svg">
+                        <div class="about__subtitle">Широкий<br/>ассортимент</div>
+                    </div>
+                    <div class="about__item">
+                        <img src="img/icon/wallet.svg">
+                        <div class="about__subtitle">Честные цены,<br/>честные сроки</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews content-block popular-items">
+                <div class="swiper" id="review-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+
+                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                </div>
+                                <div class="review__author">
+                                    <img src="img/persons/pers_1.jfif">
+                                    <div class="review__name">
+                                        <div>Иван Иванов</div>
+                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+
+                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                </div>
+                                <div class="review__author">
+                                    <img src="img/persons/pers_1.jfif">
+                                    <div class="review__name">
+                                        <div>Иван Иванов</div>
+                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+
+                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                </div>
+                                <div class="review__author">
+                                    <img src="img/persons/pers_1.jfif">
+                                    <div class="review__name">
+                                        <div>Иван Иванов</div>
+                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__text">
+                                Как клиент этой компании (уже давно) могу сказать что полностью удовлетворен уровнем обслуживания и качеством предоставляемых услуг. Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).<br/>
+
+                                Особенно радует техподдержка, быстро реагирует на все запросы через тикет систему, особенно если ставить оценку хорошо за каждый комментарий ).
+                                </div>
+                                <div class="review__author">
+                                    <img src="img/persons/pers_1.jfif">
+                                    <div class="review__name">
+                                        <div>Иван Иванов</div>
+                                        <div>Генеральный директор ООО “Рога и Копыта”</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-items__slider-btns">
+                        <button class="slider__prev swiper-button-prev">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                        <button class="slider__next swiper-button-next">
+                            <svg class="icon"><use href="#icon-slider_arrow"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="heading-container">
+                    <div class="heading">Упаковка для фастфуда</div>
+                </div>
+                <div class="catalog-category__subcategories menu__catalog">
+                    <a href="#" class="catalog-category__item catalog__item">
+                        <img src="img/catalog/buns.svg" class="fill-white">
+                        <div class="subtitle">Для выпечки</div>
+                    </a>
+                    <a href="#" class="catalog-category__item catalog__item">
+                        <img src="img/catalog/popcorn.svg" class="fill-white">
+                        <div class="subtitle">Для попкорна</div>
+                    </a>
+                    <a href="#" class="catalog-category__item catalog__item">
+                        <img src="img/catalog/nuggets.svg" class="fill-white">
+                        <div class="subtitle">Для наггетсов</div>
+                    </a>
+                    <a href="#" class="catalog-category__item catalog__item">
+                        <img src="img/catalog/tray.svg" class="fill-white">
+                        <div class="subtitle">Лотки</div>
+                    </a>
+                    <a href="#" class="catalog-category__item catalog__item">
+                        <img src="img/catalog/sandwich.svg" class="fill-white">
+                        <div class="subtitle">Для сэндвичей</div>
+                    </a>
+                </div>
+                <div class="quick-links">
+                    <a href="#">Быстрая ссылка</a>
+                    <a href="#">Быстрая ссылка</a>
+                    <a href="#">Быстрая ссылка</a>
+                    <a href="#">Быстрая ссылка</a>
+                    <a href="#">Быстрая ссылка</a>
+                    <a href="#">Быстрая ссылка</a>
+                </div>
+                <div class="flex-container seo-container">
+                    <div class="sidebar sidebar-top sidebar-categories">
+                        <div class="filter" id="filter">
+                            <div class="filter__title">Фильтр по товарам:</div>
+                            <div class="filter__category">
+                                <div class="filter__name">
+                                    <span>Объем, мл</span>
+                                    <img src="img/icon/arrow_down.svg" class="info__arrow-btn">
+                                </div>
+                                <div class="filter__items form">
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">50</span>
+                                        </div>
+                                        <span class="amount">(100)</span>
+                                    </div>
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">100</span>
+                                        </div>
+                                        <span class="amount">(100)</span>
+                                    </div>
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">1250</span>
+                                        </div>
+                                        <span class="amount">(100)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__category">                 
+                                <div class="filter__name">
+                                    <span>Цвет</span>
+                                    <img src="img/icon/arrow_down.svg" class="info__arrow-btn">
+                                </div>
+                                <div class="filter__items form">
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">Белый</span>
+                                        </div>
+                                        <span class="amount">(100)</span>
+                                    </div>
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">Черный</span>
+                                        </div>
+                                        <span class="amount">(0)</span>
+                                    </div>
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">Крафт</span>
+                                        </div>
+                                        <span class="amount">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__category">                 
+                                <div class="filter__name">
+                                    <span>Цвет</span>
+                                    <img src="img/icon/arrow_down.svg" class="info__arrow-btn">
+                                </div>
+                                <div class="filter__items form">
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">Белый</span>
+                                        </div>
+                                        <span class="amount">(100)</span>
+                                    </div>
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">Черный</span>
+                                        </div>
+                                        <span class="amount">(0)</span>
+                                    </div>
+                                    <div class="filter__item agreement">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="value">Крафт</span>
+                                        </div>
+                                        <span class="amount">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="show-more" id="filter-show-more">Показать еще</button>
+                            <button class="btn clean-filter">Очистить фильтр</button>
+                        </div>
+                        
+                    </div>
+                    <div class="main">
+                        <div class="sorting">
+                            <div class="sort sort__modal-btn">
+                                <span>Сортировка:</span>
+                                <div class="select-container">
+                                    <select name="" id="" class="select">
+                                        <option value="default">По умолчанию</option>
+                                        <option value="price_asc">По возрастанию цены</option>
+                                        <option value="price_desc">По убыванию цены</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sort__modal">
+                                <div class="title">Сортировка</div>
+                                <div class="sort__options">
+                                    <div class="sort__option">
+                                        <input type="checkbox" name="" id="">
+                                        <span>По умолчанию</span>
+                                    </div>
+                                    <div class="sort__option">
+                                        <input type="checkbox" name="" id="">
+                                        <span>По возрастанию цены</span>
+                                    </div>
+                                    <div class="sort__option">
+                                        <input type="checkbox" name="" id="">
+                                        <span>По убыванию цены</span>
+                                    </div>
+                                </div>
+                                <div class="sort__btns">
+                                    <button class="btn">Применить</button>
+                                    <button class="secondary-btn">Сбросить</button>
+                                </div>
+                            </div>
+                            <div class="display">
+                                <span>Отображение:</span>
+                                <div class="display__btns">
+                                    <button id="display-vertical" class="active">
+                                        <svg class="icon"><use href="#icon-display_1"></use></svg>
+                                    </button>
+                                    <button id="display-horizontal">
+                                        <svg class="icon"><use href="#icon-display_2"></use></svg>
+                                    </button>
+                                </div>
+                                <span>Товаров:</span>
+                                <div class="select-container">
+                                    <select name="" id="" class="select">
+                                        <option value="default">12 шт.</option>
+                                        <option value="price_asc">24 шт.</option>
+                                        <option value="price_desc">48 шт.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filter sort__modal-btn">
+                                <svg class="icon"><use href="#icon-filter"></use></svg>
+                                <span>Фильтры</span>
+                            </div>
+                            <div class="sort__modal filter__modal">
+                                <div class="filter" id="filter">
+                                    <div class="filter__title">Фильтр по товарам:</div>
+                                    <div class="filter__category">
+                                        <div class="filter__name">
+                                            <span>Объем, мл</span>
+                                            <img src="img/icon/arrow_down.svg" class="info__arrow-btn">
+                                        </div>
+                                        <div class="filter__items form">
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">50</span>
+                                                </div>
+                                                <span class="amount">(100)</span>
+                                            </div>
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">100</span>
+                                                </div>
+                                                <span class="amount">(100)</span>
+                                            </div>
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">1250</span>
+                                                </div>
+                                                <span class="amount">(100)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__category">                 
+                                        <div class="filter__name">
+                                            <span>Цвет</span>
+                                            <img src="img/icon/arrow_down.svg" class="info__arrow-btn">
+                                        </div>
+                                        <div class="filter__items form">
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">Белый</span>
+                                                </div>
+                                                <span class="amount">(100)</span>
+                                            </div>
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">Черный</span>
+                                                </div>
+                                                <span class="amount">(0)</span>
+                                            </div>
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">Крафт</span>
+                                                </div>
+                                                <span class="amount">(20)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__category">                 
+                                        <div class="filter__name">
+                                            <span>Цвет</span>
+                                            <img src="img/icon/arrow_down.svg" class="info__arrow-btn">
+                                        </div>
+                                        <div class="filter__items form">
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">Белый</span>
+                                                </div>
+                                                <span class="amount">(100)</span>
+                                            </div>
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">Черный</span>
+                                                </div>
+                                                <span class="amount">(0)</span>
+                                            </div>
+                                            <div class="filter__item agreement">
+                                                <div class="filter__checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <span class="value">Крафт</span>
+                                                </div>
+                                                <span class="amount">(20)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="show-more" id="filter-show-more">Показать еще</button>
+                                </div>
+                                <div class="sort__btns">
+                                    <button class="btn">Применить</button>
+                                    <button class="secondary-btn">Сбросить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products" id="products">
+                            <div class="products-container popular-items items-parent popular-items__cards">
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                <div class="popular-items__card">
+                                    <div class="popular-items__tools">
+                                        <div><svg class="icon secondary-icon favorites"><use href="#icon-heart"></use></svg><span>Добавить в избранное</span> </div>
+                                        <div><svg class="icon secondary-icon matching"><use href="#icon-matching"></use></svg><span>Добавить в сравнение</span></div>
+                                    </div>
+                                    <div class="popular-items__img">
+                                        <img src="img/products/cup_1.png" data-hover-slides='["img/products/burger_1.png", "img/products/cup_1.png", "img/products/burger_1.png"]'>
+                                    </div>
+                                    <div class="popular-items__title">
+                                        Коробка для гамбургера с печатью
+                                        <div class="popular-items__subtitle-container">
+                                            <div class="popular-items__subtitle">от 1.98 до 9.19 р.</div>
+                                            <div class="popular-items__status popular-items__in-stock">
+                                                <img src="img/icon/radio_checked.svg">
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="popular-items__btns">
+                                        <button class="popular-items__in-basket">В корзину</button>
+                                        <button class="popular-items__quick-buy secondary-btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                                
+                                
+            
+            
+            
+            
+                                <div class="quick-buy-modal modal">
+                                    <button class="modal__close close-quick-buy-modal"><img src="img/icon/close.svg"></button>
+                                    <div class="quick-buy-modal__item">
+                                        <div class="info">
+                                            <img src="img/products/cup_1.png">
+                                            <div class="name">Однослойный бумажный стакан 100 мл</div>
+                                        </div>
+                                        <div class="amount">
+                                            <div class="label">Количество</div>
+                                            <div class="amount__control">
+                                                <button><svg class="icon"><use href="#icon-minus"></use></svg></button>
+                                                <div class="count">1000</div>
+                                                <button><svg class="icon"><use href="#icon-plus"></use></svg></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quick-buy-modal__form">
+                                        <form action="#" class="form">
+                                            <label for="name">ФИО*</label>
+                                            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович">
+                                            <label for="number">Ваш телефон*</label>
+                                            <input type="text" id="number" name="phone" placeholder="+7">
+                                            <label for="email">E-mail*</label>
+                                            <input type="text" id="email" name="name" placeholder="ivan@mail.ru">
+                                            <button type="submit" class="btn">Купить в 1 клик</button>
+                                            <div class="agreement">
+                                                <input type="checkbox" id="agree">
+                                                <span class="checkmark"></span>
+                                                <label for="agree">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="show-more btn">Показать еще</button>
+                            <div class="pagination">
+                                <button class="secondary-btn active">1</button>
+                                <button class="secondary-btn">2</button>
+                                <button class="secondary-btn">3</button>
+                                <button class="secondary-btn">4</button>
+                            </div>
+                        </div>
+                        <div class="seo content-block">
+                            <div class="heading-container">
+                                <div class="heading">Заголовок SEO блока</div>
+                            </div>
+                            <div class="seo__text">
+                                Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира. <br/>
+                                Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира <br/><br/>
+                                Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира. <br/>
+                                Еда на вынос становится такой же популярной, как и кофе. Для её фасовки используется картонная упаковка, изготавливаемая на заказ. Упаковка из картона, как и посуда, выдерживает длительный контакт с продуктами питания, не раскисая и не портясь под длительным воздействием влаги и жира
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <my-footer class="footer"></my-footer>
+    </div>
+</body>
+</html>

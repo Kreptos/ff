@@ -1,0 +1,18 @@
+.hover-slider-indicator {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+}
+.hover-slider-indicator-dot {
+    list-style-type: none;
+    background: #AEAEAE;
+    width: 30px;
+    height: 2px;
+    margin-right: 5px;
+}
+.hover-slider-indicator-dot.active {
+    background: #73B841;
+}

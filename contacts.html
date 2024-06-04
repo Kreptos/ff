@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/templates.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/mask/mask.js"></script>
+    <script src="js/mask.js"></script>
+    <title>FoodFace</title>
+</head>
+<body>
+    <my-icons class="icons"></my-icons>
+    <my-header-mobile class="header-mobile" id="header-mobile"></my-header-mobile>
+    <div class="container wrapper container_sideless contacts-page">
+        <my-header class="header"></my-header>
+        <div class="bread-crumbs">
+            <a href="index.html" class="bread-crumbs__item">Главная</a>
+            <a href="contacts.html" class="bread-crumbs__item">Контакты</a>
+        </div>
+        <main class="contacts-page">
+            <div class="contacts-page__container">
+                <div class="contacts">
+                    <div class="heading-container">
+                        <div class="heading">Контакты</div>
+                    </div>
+                    <div class="page-nav">
+                        <a href="contacts.html" class="active ">Офис</a>
+                        <a href="contacts-production.html">Производство </a>
+                    </div>
+                    <div class="contacts__phones">
+                        <div class="contacts__phone"><img src="img/icon/phone.svg">8 343 363 45 05</div>
+                        <div class="contacts__phone"><img src="img/icon/phone.svg">8 800 222 71 39</div>
+                    </div>
+                    <div class="contacts__address contacts__container">
+                        <img src="img/icon/balloon.svg">
+                        <div>Екатеринбург, ул. 8 марта, 267/3</div>
+                    </div>
+                    <div class="contacts__email contacts__container">
+                        <img src="img/icon/mail.svg">
+                        <div>foodface.ru@gmail.com</div>
+                    </div>
+                    <div class="contacts__time contacts__container">
+                        <img src="img/icon/clock.svg">
+                        <div>
+                            Режим работы<br/>
+                            Будни: 9:00–21:00<br/>
+                            Выходные: 9:00–21:00<br/>
+                        </div>
+                    </div>
+                    <div class="contacts__social contacts__container">
+                        Мы в социальных сетях
+                        <div>
+                            <a href="#"><img src="img/icon/vk.svg"></a>
+                            <a href="#"><img src="img/icon/youtube.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A60197bc664c28e95188f360e1e3b0e15b306767ce384f9ff1b2834d9d858cdfc&amp;width=100%25&amp;height=383&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </main>
+        <my-footer class="footer"></my-footer>
+    </div>
+</body>
+</html>

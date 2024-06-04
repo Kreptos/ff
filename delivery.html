@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/templates.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/mask/mask.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="libs/jvector-map/jvector.js"></script>
+    <title>FoodFace</title>
+</head>
+<body>
+    <my-icons class="icons"></my-icons>
+    <my-header-mobile class="header-mobile" id="header-mobile"></my-header-mobile>
+    <div class="container container_sideless wrapper" style="position:static">
+        <my-header class="header"></my-header>
+        <div class="bread-crumbs">
+            <a href="index.html" class="bread-crumbs__item">Главная</a>
+            <a href="about.html" class="bread-crumbs__item">О компании</a>
+            <a href="delivery.html" class="bread-crumbs__item">Доставка и оплата</a>
+        </div>
+        <main class="delivery">
+            <div class="delivery__container">
+                <div class="heading-container">
+                    <div class="heading">Доставка</div>
+                </div>
+                <div class="delivery__text">
+                    Компания FOODFACE.RU доставляет одноразовую посуду и упаковку в любой город России и ближнего зарубежья транспортными компаниями (автомобильный, железнодорожный, авиа транспорт)<br/><br/>
+
+                    Оплата доставки производится покупателем непосредственно транспортной компании.<br/><br/>
+
+                    Мы можем осуществлять доставку транспортной компанией. выбранной непосредственно покупателем. либо порекомендовать ему транспортную компанию, имеющую положительный опыт доставки нашей продукции.
+                </div>
+                <div class="page-nav">
+                    <a href="delivery-ekb.html">Екатеринбург</a>
+                    <a href="delivery.html" class="active ">Другие регионы</a>
+                </div>
+                <div class="delivery__text">
+                    <p>Сроки доставки в отдельные города и субъекты федерации:<br/><br/></p>
+                    <p>
+                        Москва – до 3 дней;<br/>
+                        Республика Крым и г. Севастополь – от 4 дней;<br/>
+                        г. Тюмень – от 2 дней;<br/>
+                        Якутия – от 5 дней.<br/><br/>
+                    </p>
+                    <p>
+                        Сроки доставки могут изменяться в зависимости от выбранной покупателем транспортной компании, а также погодных условий и ограничений для отдельных видов транспорта.
+                    </p>
+                </div>
+                <div class="delivery__map">
+                    <script>
+                        var regionColors = {};
+                        
+                        for (region in shipping_time)
+                        {
+                            var days = shipping_time[region][0];
+                
+                            regionColors[region] = 
+                                (days === 1) ? '#4FAF53' :
+                                (days === 2) ? '#CDDC46' :
+                                (days === 3) ? '#FD9722' :
+                                (days === 4) ? '#1CB1FD' :
+                                (days === 5) ? '#673CB5' :
+                                (days > 5 && days <= 10) ? '#E72C74' :
+                                (days > 10) ? '#607D8A' :
+                                    '#eff4fa';    
+                        }
+                
+                        function ResizeMap() {
+                            var mapWidth = $('#vmap').parent().width();
+                            $('#vmap').css({
+                                'width': mapWidth,
+                                'height': (mapWidth / 2)					
+                            });
+                        }
+                        
+                        $(document).ready(function () {
+                            ResizeMap();
+                            $(window).on("resize", ResizeMap);
+                            
+                            $('#vmap').vectorMap({
+                                map: 'russia',
+                                backgroundColor: '#fff',
+                                color: '#eff4fa',
+                                borderColor: '#fff',
+                                borderWidth: 2,
+                                hoverOpacity: 0.7,
+                                hoverColor: '#000',
+                                selectedColor: '#eff4fa',
+                                colors: regionColors,
+                                enableZoom: false,
+                                showTooltip: true,
+                                scaleColors: ['#C8EEFF', '#006491'],
+                                normalizeFunction: 'polynomial',
+                              
+                                onLabelShow: function(event, label, code){
+                                    var name = '<b>'+label.text()+'</b><br/>';
+                                    var daysTitle = (shipping_time[code][0] === 1 ? ' дня' : ' дней');
+                                    
+                                    if (shipping_time[code])
+                                        name += 'Срок доставки: от '+shipping_time[code][0]+daysTitle;
+                                    label.html(name);
+                                }              
+                            });
+                        });
+                    </script>
+                    <ul class="shipping-colors-list">
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#4FAF53;"></div>
+                            <div class="shipping-color__name">от 1 дня</div>
+                        </li>
+                        
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#CDDC46;"></div>
+                            <div class="shipping-color__name">от 2 дней</div>
+                        </li>
+        
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#FD9722;"></div>
+                            <div class="shipping-color__name">от 3 дней</div>
+                        </li>
+        
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#1CB1FD;"></div>
+                            <div class="shipping-color__name">от 4 дней</div>
+                        </li>
+        
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#673CB5;"></div>
+                            <div class="shipping-color__name">от 5 дней</div>
+                        </li>
+        
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#E72C74;"></div>
+                            <div class="shipping-color__name">от 6 дней</div>
+                        </li>
+        
+                        <li class="shipping-color">
+                            <div class="shipping-color__sample" style="background:#607D8A;"></div>
+                            <div class="shipping-color__name">от 10 дней</div>
+                        </li>				
+                    </ul>
+                    
+                    <div id="vmap" style="max-width: 1025px; width: 100%; height: 520px; max-height: 500px; position: relative; overflow: hidden; background-color: rgb(255, 255, 255);"></div>
+                    </div>
+            </div>
+            <div class="content-block">
+                <div class="heading-container">
+                    <div class="heading">Оплата</div>
+                </div>
+                <div class="delivery__text">
+                    Компания FOODFACE.RU доставляет одноразовую посуду и упаковку в любой город России и ближнего зарубежья транспортными компаниями (автомобильный, железнодорожный, авиа транспорт)<br/><br/>
+
+                    Оплата доставки производится покупателем непосредственно транспортной компании.<br/><br/>
+
+                    Мы можем осуществлять доставку транспортной компанией. выбранной непосредственно покупателем. либо порекомендовать ему транспортную компанию, имеющую положительный опыт доставки нашей продукции.
+                </div>
+            </div>
+        </main>
+        <my-footer class="footer"></my-footer>
+    </div>
+</body>
+</html>
